@@ -23,67 +23,65 @@
 <p>&nbsp;</p>
 <p><span style="font-size: 14px">单个授权</span></p>
 <p><span style="font-size: 14px">&nbsp;</span></p>
-<div class="cnblogs_code">
-<pre> <span style="color: #008000">//</span><span style="color: #008000">检查版本是否大于M</span>
-                <span style="color: #0000ff">if</span> (Build.VERSION.SDK_INT &gt;=<span style="color: #000000"> Build.VERSION_CODES.M) {
-                   </span><span style="color: #008000">//</span><span style="color: #008000">单个权限</span>
-<span style="color: #000000">
+<pre name="code" class="java">//检查版本是否大于M
+                if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.M) {
+                   //单个权限
+
                     rxPermissions.request(Manifest.permission.CAMERA)
-                            .subscribe(</span><span style="color: #0000ff">new</span> Observer&lt;Boolean&gt;<span style="color: #000000">() {
+                            .subscribe(new Observer&lt;Boolean&gt;() {
                                 @Override
-                                </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onSubscribe(Disposable d) {
+                                public void onSubscribe(Disposable d) {
 
                                 }
                                 @Override
-                                </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onNext(Boolean value) {
-                                    </span><span style="color: #0000ff">if</span><span style="color: #000000">(value){
-                                        showToast(</span>"同意权限"<span style="color: #000000">);
-                                    }</span><span style="color: #0000ff">else</span><span style="color: #000000"> {
-                                        showToast(</span>"拒绝权限"<span style="color: #000000">);
+                                public void onNext(Boolean value) {
+                                    if(value){
+                                        showToast(&quot;同意权限&quot;);
+                                    }else {
+                                        showToast(&quot;拒绝权限&quot;);
                                     }
                                 }
 
                                 @Override
-                                </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onError(Throwable e) {
+                                public void onError(Throwable e) {
 
                                 }
 
                                 @Override
-                                </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onComplete() {
+                                public void onComplete() {
 
                                 }
                             });
-                }</span></pre>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>多个授权</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000">　　　　　　　 rxPermissions.requestEach(Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CALL_PHONE)
-                         .subscribe(</span><span style="color: #0000ff">new</span> Observer&lt;Permission&gt;<span style="color: #000000">() {
+                }</pre><br>
+<span style="font-size:14px">多个授权</span>
+<p></p>
+<p></p>
+<pre name="code" class="java">rxPermissions.requestEach(Manifest.permission.CAMERA,
+     Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CALL_PHONE)
+                         .subscribe(new Observer&lt;Permission&gt;() {
                             @Override
-                            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onSubscribe(Disposable d) {
+                            public void onSubscribe(Disposable d) {
 
                             }
                             @Override
-                            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onNext(Permission permission) {
+                            public void onNext(Permission permission) {
 
-                                </span><span style="color: #0000ff">if</span><span style="color: #000000"> (permission.name.equals(Manifest.permission.CAMERA)){
-                                    showToast(</span>"申请成功"<span style="color: #000000">);
+                                if (permission.name.equals(Manifest.permission.CAMERA)){
+                                    showToast(&quot;申请成功&quot;);
                                 }
                             }
                             @Override
-                            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onError(Throwable e) {
+                            public void onError(Throwable e) {
 
                             }
 
                             @Override
-                            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span><span style="color: #000000"> onComplete() {
+                            public void onComplete() {
 
                             }
-                        });</span></pre>
-</div>
-<p>&nbsp;</p>
+                        });</pre><br>
+<p></p>
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">前提一定要注意：AndroidManifest中：</span></span></p>

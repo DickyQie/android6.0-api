@@ -14,14 +14,11 @@
 <p><span style="font-size: 14px"><span class="postTitle2">先来看看效果图：（<strong><span style="color: #800000">注：如果未授权就点击打电话或拍照就会直接闪退，由此6.0必须手动授权，开发时如果未授权，可以判断并提示用户从新授权</span></strong>）</span></span></p>
 <p><span style="font-size: 14px"><span class="postTitle2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="http://images2017.cnblogs.com/blog/1041439/201709/1041439-20170922114844400-185031241.gif" alt="" width="500"></span></span></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">上图：</span></span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">1：单个授权,电话授权。</span></span></p>
 <p><span style="font-size: 14px"><span class="postTitle2">2：有电话，SD卡，拍照授权三个一起授权</span></span></p>
-<p>&nbsp;</p>
 <p><span style="font-size: 14px">单个授权</span></p>
-<p><span style="font-size: 14px">&nbsp;</span></p>
 <pre name="code" class="java">//检查版本是否大于M
                 if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.M) {
                    //单个权限
@@ -78,12 +75,9 @@
                             }
                         });
 </pre><br>
-
-<p><span style="font-size: 14px"><span class="postTitle2">前提一定要注意：AndroidManifest中：</span></span></p>
-<p>&nbsp;</p>
+<p><span style="font-size: 14px">前提一定要注意：AndroidManifest中：</span></p>
 <pre name="code" style="font-size:14px" class="html">  &lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot;/&gt;  //电话
   &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;    //拍照
   &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;     //sd卡
 </pre><br>
-<p></p>
 <p>此案例是借助第三方RxPermissions来写的了，可以去看看这个库的代码。</p>

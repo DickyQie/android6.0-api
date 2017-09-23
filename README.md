@@ -2,7 +2,7 @@
 
 <div id="cnblogs_post_body"><p>前面写了Android6.0权限介绍和权限单个，多个申请，用的是纯Java代码，本文主要说的是借助第三方库来实现权限申请。</p>
 <p>借助第三方库<span style="font-size: 16px"><strong> <span class="path-divider">RxPermissions</span></strong><span class="path-divider">来申请6.0权限。</span></span></p>
-<h1 class="public "><span class="path-divider"><strong><span style="font-size: 14px"><strong> <span class="path-divider">RxPermissions库地址：</span></strong></span></strong><a href="https://github.com/tbruyelle/RxPermissions" target="_blank"><span style="font-size: 14px"><span class="path-divider">https://github.com/tbruyelle/RxPermissions</span></span> </a></span></h1>
+<h3 class="public "><span class="path-divider"><strong><span style="font-size: 14px"><strong> <span class="path-divider">RxPermissions库地址：</span></strong></span></strong><a href="https://github.com/tbruyelle/RxPermissions" target="_blank"><span style="font-size: 14px"><span class="path-divider">https://github.com/tbruyelle/RxPermissions</span></span> </a></span></h3>
 <p>bulid.gradle引入：</p>
 <div class="cnblogs_code">
 <pre><span style="color: #008080">  compile</span> <span style="color: #ff6600">'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'</span><span style="color: #000000"><span style="color: #008080">

@@ -9,7 +9,7 @@
   compile</span> </span><span style="color: #ff6600">"io.reactivex.rxjava2:rxjava:2.0.0"</span></pre>
 </div>
 <p>&nbsp;</p>
-<p><span style="font-size: 14px">权限相关知识，权限表请看博客： <a href="http://www.cnblogs.com/zhangqie/p/7562736.html" target="_blank"> <span class="postTitle2">Android6.0------权限管理&nbsp; &nbsp;</span></a><span class="postTitle2"> &nbsp; &nbsp; &nbsp; <a href="http://www.cnblogs.com/zhangqie/p/7562959.html" target="_blank"><span class="postTitle2">Android6.0------权限申请管理（单个权限和多个权限申请）</span></a></span></span></p>
+<p><span style="font-size: 14px">权限相关知识，权限表请看博客：<br/> <a href="http://www.cnblogs.com/zhangqie/p/7562736.html" target="_blank"> <span class="postTitle2">Android6.0------权限管理&nbsp; &nbsp;</span></a><span class="postTitle2"> &nbsp; &nbsp; &nbsp; <br/><a href="http://www.cnblogs.com/zhangqie/p/7562959.html" target="_blank"><span class="postTitle2">Android6.0------权限申请管理（单个权限和多个权限申请）</span></a></span></span></p>
 <p><span style="font-size: 14px"><span class="postTitle2">前提：APP运行在<code>Android 6.0 (API level 23)</code>或者更高级别的设备中，而且<code>targetSdkVersion&gt;=23</code>时，系统将会自动采用动态权限管理策略，</span></span></p>
 <p><span style="font-size: 14px"><span class="postTitle2">先来看看效果图：（<strong><span style="color: #800000">注：如果未授权就点击打电话或拍照就会直接闪退，由此6.0必须手动授权，开发时如果未授权，可以判断并提示用户从新授权</span></strong>）</span></span></p>
 <p><span style="font-size: 14px"><span class="postTitle2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="http://images2017.cnblogs.com/blog/1041439/201709/1041439-20170922114844400-185031241.gif" alt="" width="500"></span></span></p>

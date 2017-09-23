@@ -18,7 +18,6 @@
 <p><span style="font-size: 14px"><span class="postTitle2">上图：</span></span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">1：单个授权,电话授权。</span></span></p>
-<p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">2：有电话，SD卡，拍照授权三个一起授权</span></span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 14px">单个授权</span></p>
@@ -54,7 +53,6 @@
                             });
                 }</pre><br>
 <span style="font-size:14px">多个授权</span>
-<p></p>
 <pre name="code" class="java">rxPermissions.requestEach(Manifest.permission.CAMERA,
      Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CALL_PHONE)
                          .subscribe(new Observer&lt;Permission&gt;() {
@@ -78,17 +76,14 @@
                             public void onComplete() {
 
                             }
-                        });</pre><br>
-<p></p>
+                        });
+</pre><br>
 
-<p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">前提一定要注意：AndroidManifest中：</span></span></p>
 <p>&nbsp;</p>
-<pre name="code" class="html">  &lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot;/&gt;  //电话
+<pre name="code" style="font-size:14px" class="html">  &lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot;/&gt;  //电话
   &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;    //拍照
-  &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;     //sd卡</pre><br>
+  &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;     //sd卡
+</pre><br>
 <p></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <p>此案例是借助第三方RxPermissions来写的了，可以去看看这个库的代码。</p>

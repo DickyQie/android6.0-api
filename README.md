@@ -55,7 +55,6 @@
                 }</pre><br>
 <span style="font-size:14px">多个授权</span>
 <p></p>
-<p></p>
 <pre name="code" class="java">rxPermissions.requestEach(Manifest.permission.CAMERA,
      Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CALL_PHONE)
                          .subscribe(new Observer&lt;Permission&gt;() {
@@ -83,16 +82,12 @@
 <p></p>
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 <p><span style="font-size: 14px"><span class="postTitle2">前提一定要注意：AndroidManifest中：</span></span></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class="cnblogs_code">
-<pre>  <span style="color: #0000ff">&lt;<span style="color: #800000">uses-permission <span style="color: #ff0000">android:name<span style="color: #0000ff">="android.permission.CALL_PHONE"<span style="color: #0000ff">/&gt; <span style="color: #000000"> <span style="color: #008000">//<span style="color: #008000">电话
-  <span style="color: #0000ff">&lt;<span style="color: #800000">uses-permission <span style="color: #ff0000">android:name<span style="color: #0000ff">="android.permission.CAMERA"<span style="color: #0000ff">/&gt;   <span style="color: #0000ff"><span style="color: #000000"> <span style="color: #008000">//<span style="color: #008000">拍照
-  <span style="color: #0000ff">&lt;<span style="color: #800000">uses-permission <span style="color: #ff0000">android:name<span style="color: #0000ff">="android.permission.WRITE_EXTERNAL_STORAGE"<span style="color: #0000ff">/&gt;    <span style="color: #0000ff"><span style="color: #000000"> <span style="color: #008000">//<span style="color: #008000">sd卡</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></pre>
-</div>
+<pre name="code" class="html">  &lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot;/&gt;  //电话
+  &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;    //拍照
+  &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;     //sd卡</pre><br>
+<p></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

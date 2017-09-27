@@ -2,7 +2,7 @@
  <p>前面写了Android6.0权限介绍和权限单个，多个申请，用的是纯Java代码，本文主要说的是借助第三方库来实现权限申请。</p> 
 <p>借助第三方库<strong> easypermissions</strong>来申请6.0权限，Google官方推荐的。</p> 
 <span id="OSC_h1_1"></span>
-<h1><strong><strong><strong>easypermissions</strong>库地址：</strong></strong><a href="https://github.com/googlesamples/easypermissions" target="_blank" rel="nofollow">https://github.com/googlesamples/easypermissions</a></h1> 
+<h3><strong><strong><strong>easypermissions</strong>库地址：</strong></strong><a href="https://github.com/googlesamples/easypermissions" target="_blank" rel="nofollow">https://github.com/googlesamples/easypermissions</a></h3> 
 <p>bulid.gradle引入：</p> 
 <pre><code class="language-java">
 compile 'pub.devrel:easypermissions:1.0.0'

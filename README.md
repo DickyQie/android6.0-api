@@ -1,4 +1,4 @@
-##Android6.0------权限申请~easypermissions 
+## Android6.0------权限申请~easypermissions 
  <p>前面写了Android6.0权限介绍和权限单个，多个申请，用的是纯Java代码，本文主要说的是借助第三方库来实现权限申请。</p> 
 <p>借助第三方库<strong> easypermissions</strong>来申请6.0权限，Google官方推荐的。</p> 
 <span id="OSC_h1_1"></span>
